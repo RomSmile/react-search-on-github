@@ -1,0 +1,120 @@
+.user-profile {
+  height: calc(100% - 10%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #313131;
+
+  &__bottom {
+    height: fit-content;
+  }
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(64, 147, 241);
+  padding: 20px 30px 10px;
+
+  &__user-container {
+    display: flex;
+  }
+  
+  &__user-blog {
+    margin: 20px 0px 0px 0px;
+    font-size: 16px;
+    color: #fff;
+
+    @media screen and (max-width: 390px) {
+      font-size: 14px;
+    }
+  }
+
+  &__search-repo {
+    width: 100%;
+    margin-top: 20px;
+    padding: 7px 15px;
+    background-color: #3e4491;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    align-self: center;
+  }
+}
+
+.user-container {
+  &__image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+    & img {
+      width: 50%;
+      margin-top: 20px;
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 420px) {
+        width: 120%;
+      }
+
+      @media screen and (max-width: 360px) {
+        width: 140%;
+      }
+
+      @media screen and (max-width: 340px) {
+        width: 150%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 30%;
+    }
+  }
+
+  &__information {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+
+    & li {
+      list-style: none;
+      color: #fff;
+      font-size: 18px;
+      padding: 0;
+
+      @media screen and (max-width: 600px) {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: 390px) {
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 67%;
+    }
+  }
+
+  &__back {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    background: #f7a400;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 50%;
+  }
+}
