@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   background-color: #313131;
+  position: relative;
 
   &__bottom {
     height: fit-content;
@@ -103,8 +104,8 @@
 
   &__back {
     position: absolute;
-    top: 50px;
-    right: 30px;
+    top: 15px;
+    right: 10px;
     background: #f7a400;
     width: 20px;
     height: 20px;
