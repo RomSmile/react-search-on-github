@@ -81,7 +81,7 @@ export const UserProfile:React.FC<Props> = ({ selectedUser, setProfile }) => {
         if (searchValue.length !== 0) {
           const repos = await getRepos(response.repos_url);
 
-          setArrRepo(repos.filter(item => item.name.includes(searchValue)));
+          setArrRepo(repos.filter(item => item.name.toLowerCase().includes(searchValue.toLocaleLowerCase())));
         } else {
           const repos = await getRepos(response.repos_url);
 
